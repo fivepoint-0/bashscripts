@@ -1,0 +1,8 @@
+#!/bin/bash
+
+systemctl stop $1
+systemctl disable $1
+rm /etc/systemd/system/$1
+rm /etc/systemd/system/$1
+systemctl daemon-reload
+systemctl reset-failed

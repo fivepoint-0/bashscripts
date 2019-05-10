@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "user history (pi)"
+echo "================="
+cat /home/pi/.bash_history | grep $1
+echo ""
+echo ""
+
+echo "user history (root)"
+echo "==================="
+cat ~/.bash_history | grep $1
+echo ""
+echo ""
+
+echo "user history (webapps)"
+echo "======================"
+cat /home/webapps/.bash_history | grep $1
+echo ""
+echo ""
