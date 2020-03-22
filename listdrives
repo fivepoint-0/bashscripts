@@ -1,0 +1,2 @@
+#!/bin/bash
+df | cut -d '/' -f1 | sed -e 's/\(\w\):.*/\1/' | grep -oP '^\w{1}$'
